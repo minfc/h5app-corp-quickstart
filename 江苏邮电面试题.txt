@@ -1,0 +1,26 @@
+您好，本职位要求Java开发，为降低沟通成本，请选择性的回答完成以下题目，公司将根据您的回答来安排进行技术面试.请题目的答案 发到简书或csdn或git上上。把地址给我
+1、 Activiti工作流中，如果要实现根据工作负荷来安排任务，有什么思路？
+2、 采用SprigngCloud之后，代码开发，日志，异常链，管理，排除故障等方面应有什么调整？
+开发分模块springboot开发，分布式日志系统搭建收集日志，多数据源dynamic，服务之间调用resttemplate
+
+3、 实体类为未来参与排序等集合的操作操作，一般要重新哪些方法？有哪些注意点？
+实体类实现Comparabl接口，然后重写compareTo方法
+
+4、 Java Serializable 的作用, Equals ，== 的区别？
+==比较对象的地址，equals比较的是两个对象的值
+
+5、 是否有自己的Git地址
+https://github.com/minfc/mybatis-plus.git
+
+6、 前后端分离开发，日志应该如何进行记录，在出现问题的时候，方便定位问题？
+前端通过控制台，后台可通过log4j记录在日志文件里
+
+7、 数据库访问的时候，在一个项目中是否可以同时使用Mybatis，JPA，JDBC等多种持久化技术？如可以，事务如何处理？
+可以使用多数据源，同一个mapper对应一个数据源，否则jpa会覆盖mybatis事务
+
+10、修复bug
+https://gitee.com/stevenworkshop_admin/dingdingprivateword.git
+该项目是springboot集成jpa。在启动的时候，springboot出现异常，无法启动。
+请结合springboot的启动原理进行分析，排除故障，在数据库中自动生成表，并解释故障原因。
+
+未引入hibernate的hibernate-entitymanager，无法执行建表语句
